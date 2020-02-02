@@ -1,0 +1,244 @@
+/* Basic Styling */
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap");
+
+body {
+  font-family: Josefin Slab, serif;
+}
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* links */
+a {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* paragraphs */
+
+p {
+  margin: 0.75rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Utility Classes */
+
+.text-primary {
+  color: red;
+}
+
+.text-secondary {
+  color: #40e0d0;
+}
+
+.text-light {
+  color: white;
+}
+
+.text-dark {
+  color: black;
+}
+
+.l-heading {
+  font-size: 2rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: black;
+}
+
+.btn-product {
+  display: inline-block;
+  width: 100%;
+  background: #333;
+  padding: 0.5rem;
+  color: white;
+  border: none;
+}
+
+/* .btn-product:hover{
+
+    opacity: 0.7;
+} */
+
+.btn:hover {
+  background: red;
+  font-weight: bold;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.bg-light {
+  background: lightblue;
+}
+
+.bg-dark {
+  background: #333;
+}
+
+.bg-red {
+  background: red;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.price {
+  color: silver;
+  font-size: 1.25rem;
+}
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  background: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+/* ul */
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+/* links */
+
+#navbar ul li a {
+  color: white;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: red;
+  border-radius: 5px;
+}
+
+/* showcase */
+
+#showcase {
+  background: #333 url("/image/showcase_img.jpeg") no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+
+  /* Overlay */
+  /* Check absolute */
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-content {
+  display: flex;
+}
+
+.about-content .content-item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+.about-content .content-item i {
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.featured-games {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  max-width: 300px;
+  text-align: center;
+}
+
+#contact {
+  display: flex;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 2rem;
+}
+
+.map {
+  flex: 1;
+}
+
+#contact .contact-form .form-group label {
+  display: block;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+#contact .contact-form .form-group input,
+#contact .contact-form .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#main-footer {
+  color: white;
+}
+
+/* utilities */
+
+.p-1 {
+  margin: 1rem 0;
+}

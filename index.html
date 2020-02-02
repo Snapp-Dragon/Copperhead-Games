@@ -1,0 +1,236 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/a7c6eeb674.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="/CSS/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1100px)"
+      href="/CSS/widescreen.css"
+    />
+
+    <title>CopperHeaad Games | Welcome</title>
+  </head>
+  <body id="home">
+    <!-- Navbar will be above the showcase because we want it to stick tot he top of the screen.
+         It would be stuck inside of the parent container
+    
+    -->
+
+    <nav id="navbar">
+      <!-- Logo -->
+      <h1 class="logo">
+        <span class="text-primary"
+          ><i class="fas fa-gamepad"></i> CopperHeaad</span
+        >
+        <span class="text-secondary">Games</span>
+      </h1>
+
+      <!-- List Items -->
+
+      <ul>
+        <!-- The links will go to the id's -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#game">Featured Games</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Showcase -->
+
+    <header id="showcase">
+      <div class="showcase-content">
+        <h1 class="l-heading p-1">
+          We're about kickin' ass, takin' names and making games.
+        </h1>
+
+        <h2>
+          We can best be described as
+          <span
+            class="txt-type text-primary"
+            data-wait="3000"
+            data-words='["Trail Blazers", "Innovators" , "Pioneers"]'
+          ></span>
+        </h2>
+
+        <p class="lead">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, placeat
+          laboriosam ab porro maiores sit?
+        </p>
+
+        <a href="#about" class="btn">Read More</a>
+      </div>
+    </header>
+
+    <!-- Services -->
+
+    <section id="about" class="bg-dark py-2">
+      <div class="container">
+        <h2 class="text-center text-light">
+          <span class="text-primary">Our</span>
+          <span class="text-secondary">Services?</span>
+        </h2>
+
+        <div class="about-content text-light">
+          <div class="content-item py-2">
+            <i class="fas fa-gamepad fa-2x text-dark bg-red"></i>
+
+            <div>
+              <h3>Hardware</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                alias.
+              </p>
+            </div>
+          </div>
+
+          <div class="content-item py-2">
+            <i class="fas fa-compact-disc fa-2x text-dark bg-red"></i>
+
+            <div>
+              <h3>Software</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+                accusantium.
+              </p>
+            </div>
+          </div>
+
+          <div class="content-item py-2 ">
+            <i class="fas fa-tshirt fa-2x text-dark bg-red"></i>
+
+            <div>
+              <h3>Merchandising</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repellendus, atque!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Games -->
+
+    <section id="game" class="py-2">
+      <div class="container">
+        <h2 class="text-center py-2 ">Featured Games</h2>
+
+        <div class="featured-games">
+          <div class="card"></div>
+
+          <div class="card">
+            <img src="/image/sword.jpg" alt="Pokemon Sword" />
+            <h2 class="py-1">Pokemon Sword</h2>
+            <p class="price">59.99</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <button class="btn-product">5/5</button>
+          </div>
+
+          <div class="card">
+            <img src="/image/shied.jpg" alt="Pokemon Shield" />
+            <h2 class="py-1">Pokemon Shield</h2>
+            <p class="price">59.99</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <button class="btn-product">5/5</button>
+          </div>
+          <div class="card">
+            <img src="/image/awakening.jpg" alt="Links Awakening" />
+            <h2 class="py-1">Links Awakening</h2>
+            <p class="price">49.99</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <button class="btn-product">4/5</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+
+    <section id="contact" class="py-2">
+      <div class="contact-form bg-light">
+        <h2 class="text-center">Contact Us</h2>
+        <p class="text-center">Please use the form to contact us</p>
+
+        <form action="process.php">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="john doe" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="sandrock@hotmail.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="number">Number</label>
+            <input
+              type="text"
+              id="number"
+              name="number"
+              placeholder="555-555-5555"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter Message"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="send" class="btn-product" />
+        </form>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.244777332218!2d-80.22618948496958!3d26.221234983430296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d904572aa48651%3A0x36f3d6bd5f88cb52!2s716%20SW%207th%20St%2C%20North%20Lauderdale%2C%20FL%2033068!5e0!3m2!1sen!2sus!4v1578975433899!5m2!1sen!2sus"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="main-footer" class="bg-dark text-center py-1">
+      <div class="container">
+        <p>Copyright &copy; 2020, All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- Jquery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="JS/main.js"></script>
+  </body>
+</html>
